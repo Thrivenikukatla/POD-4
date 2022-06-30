@@ -1,0 +1,43 @@
+﻿@model AccountMicroservice.Model.Account
+
+@{
+    ViewData["Title"] = "Account Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AccountDetails2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+ 
+</head>
+
+
+    <div>
+        <div class="container-fluid table-responsive py-5">
+            
+                    <div class="row">
+                        
+                        <div class="col-sm-2">
+                            <b>@Html.DisplayNameFor(model => model.Sav_AccountId)</b>
+
+                        </div>
+                        <div class="col-sm-10">
+
+                            @Html.DisplayFor(model => model.Sav_AccountId)
+                        </div>
+                        <div class="col-sm-2">
+                            <b>@Html.DisplayNameFor(model => model.Cur_AccountId)</b>
+
+                        </div>
+                       
+                     
+                    </div>
+
+
+        </div>
+   
+    </div>
+
+
